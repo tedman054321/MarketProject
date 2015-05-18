@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">832392603516325</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+    <string name="title_activity_view_profile">ViewProfile</string>
+</resources>

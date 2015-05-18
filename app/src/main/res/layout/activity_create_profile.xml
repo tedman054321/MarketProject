@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="loginsample.android.scu.edu.loginsample.CreateProfile"
+    android:id="@+id/layout">
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Picture"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name"
+        android:id="@+id/fName"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:layout_toEndOf="@+id/Picture"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignBottom="@+id/inputFName"
+        android:layout_toRightOf="@+id/Picture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:id="@+id/lName"
+        android:layout_below="@+id/fName"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/fName"
+        android:layout_alignEnd="@+id/fName"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/Picture"
+        android:layout_toEndOf="@+id/Picture" />
+    android:layout_alignRight="@+id/textView"
+    android:layout_alignEnd="@+id/textView"
+    android:gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age"
+        android:id="@+id/Age"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lName"
+        android:layout_alignLeft="@+id/lName"
+        android:layout_alignStart="@+id/lName"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:layout_toLeftOf="@+id/inputLname"
+        android:layout_toStartOf="@+id/inputLname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check skills above"
+        android:id="@+id/Skills"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleaning"
+        android:id="@+id/Cleaning"
+        android:gravity="left"
+        android:checked="false"
+        android:layout_below="@+id/inputAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moving"
+        android:id="@+id/Moving"
+        android:gravity="left"
+        android:layout_below="@+id/Cleaning"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handywork"
+        android:id="@+id/Handywork"
+        android:gravity="left"
+        android:checked="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Moving" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Painting"
+        android:id="@+id/Painting"
+        android:gravity="left"
+        android:checked="false"
+        android:layout_alignTop="@+id/Cleaning"
+        android:layout_alignRight="@+id/inputAge"
+        android:layout_alignEnd="@+id/inputAge"
+        android:layout_alignLeft="@+id/Organizing"
+        android:layout_alignStart="@+id/Organizing" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organizing"
+        android:id="@+id/Organizing"
+        android:gravity="left"
+        android:checked="false"
+        android:layout_above="@+id/Deliveries"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliveries"
+        android:id="@+id/Deliveries"
+        android:gravity="left"
+        android:checked="false"
+        android:layout_alignTop="@+id/Handywork"
+        android:layout_alignLeft="@+id/Organizing"
+        android:layout_alignStart="@+id/Organizing"
+        android:layout_alignBottom="@+id/Handywork" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/inputFName"
+        android:layout_alignTop="@+id/Picture"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/fName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/inputLname"
+        android:layout_above="@+id/Age"
+        android:layout_toRightOf="@+id/lName"
+        android:layout_toEndOf="@+id/lName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inputAge"
+        android:layout_alignBottom="@+id/Age"
+        android:layout_toRightOf="@+id/Age"
+        android:layout_alignRight="@+id/inputLname"
+        android:layout_alignEnd="@+id/inputLname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/Done"
+        android:layout_alignParentBottom="true"
+        android:background="#701827"
+        android:layout_toRightOf="@+id/Handywork"
+        android:layout_alignRight="@+id/Age"
+        android:layout_alignEnd="@+id/Skills" />
+
+</RelativeLayout>
